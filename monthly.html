@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Monthly Coaching Client Intake Form — Yost Group</title>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet" />
+  <style>
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+    :root {
+      --navy:    #0f2d4a;
+      --blue:    #1a5276;
+      --gold:    #b8973d;
+      --gold-lt: #f0e6cc;
+      --light:   #f5f7fa;
+      --white:   #ffffff;
+      --text:    #1c2b3a;
+      --muted:   #5a6e82;
+      --border:  #d9e2ec;
+      --radius:  10px;
+    }
+    body { font-family: 'Inter', sans-serif; font-size: 17px; color: var(--text); background: var(--white); line-height: 1.7; min-height: 100vh; display: flex; flex-direction: column; }
+
+    /* NAV */
+    nav { position: sticky; top: 0; z-index: 100; background: var(--navy); padding: 18px 40px; display: flex; align-items: center; justify-content: space-between; }
+    .nav-brand { font-family: 'Playfair Display', serif; color: var(--white); font-size: 1.25rem; letter-spacing: 0.5px; text-decoration: none; }
+    .nav-brand span { color: var(--gold); }
+    nav a.cta-nav { background: var(--gold); color: var(--white); text-decoration: none; font-weight: 600; font-size: 0.9rem; padding: 10px 22px; border-radius: 6px; }
+
+    /* MAIN */
+    main { flex: 1; display: flex; align-items: center; justify-content: center; padding: 80px 40px; background: linear-gradient(135deg, var(--navy) 0%, #1a4060 60%, #1a5276 100%); }
+    .intake-card { background: var(--white); border-radius: 16px; padding: 64px 72px; text-align: center; max-width: 560px; width: 100%; box-shadow: 0 24px 64px rgba(0,0,0,0.2); }
+    .card-eyebrow { font-size: 0.75rem; letter-spacing: 3px; text-transform: uppercase; color: var(--gold); font-weight: 700; margin-bottom: 16px; }
+    .divider { width: 56px; height: 4px; background: var(--gold); border-radius: 2px; margin: 0 auto 28px; }
+    .intake-card h1 { font-family: 'Playfair Display', serif; font-size: clamp(1.8rem, 4vw, 2.4rem); font-weight: 700; color: var(--navy); line-height: 1.2; margin-bottom: 16px; }
+    .intake-card p { font-size: 1rem; color: var(--muted); max-width: 400px; margin: 0 auto 40px; }
+    .btn-primary { background: var(--gold); color: var(--white); padding: 18px 44px; border-radius: 8px; font-weight: 700; font-size: 1.05rem; text-decoration: none; display: inline-block; transition: opacity .2s; }
+    .btn-primary:hover { opacity: 0.88; }
+
+    /* FOOTER */
+    footer { background: #071828; color: #5a7a92; text-align: center; padding: 28px 40px; font-size: 0.83rem; }
+    footer a { color: var(--gold); text-decoration: none; }
+
+    @media (max-width: 768px) {
+      nav { padding: 14px 20px; }
+      .intake-card { padding: 48px 32px; }
+    }
+  </style>
+</head>
+<body>
+
+<nav>
+  <a href="index.html" class="nav-brand">Yost <span>Group</span></a>
+  <a href="https://calendar.app.google/LTRVXMQ95F4LH87e7" target="_blank" class="cta-nav">Book a Session</a>
+</nav>
+
+<main>
+  <div class="intake-card">
+    <p class="card-eyebrow">Yost Group · Financial Coaching</p>
+    <div class="divider"></div>
+    <h1>Coaching Client Intake Form</h1>
+    <p>Complete this form before your first session so we can hit the ground running together.</p>
+    <a href="https://forms.gle/9s1dsT2vruaLdPfR8" class="btn-primary">Open the Intake Form</a>
+  </div>
+</main>
+
+<footer>
+  <p>© 2026 Yost Group LLC · <a target="_blank" href="mailto:info@yost.group">info@yost.group</a> · All rights reserved.</p>
+</footer>
+
+</body>
+</html>
